@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ингенион Инжиниринг — 3D печать на заказ, ремонт 3D принтеров</title>
+  <meta name="description" content="Ингенион Инжиниринг — профессиональная 3D печать на заказ, ремонт 3D принтеров и 3D моделирование. Тула, Москва и область.">
+  <meta name="keywords" content="3д печать, ремонт 3д принтеров, 3д моделирование, 3д сканирование, Тула, Москва">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+
+  <meta property="og:title" content="Ингенион Инжиниринг — 3D печать и ремонт">
+  <meta property="og:description" content="Профессиональная 3D печать на заказ, ремонт 3D принтеров и моделирование">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ingenion.ru">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__spinner"></div>
+  </div>
+
+  <!-- HEADER / NAV -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">
+        <span class="logo__icon">⚡</span>
+        <span class="logo__text">Ингенион <span class="logo__accent">Инжиниринг</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#services" class="nav__link">Услуги</a></li>
+          <li><a href="#portfolio" class="nav__link">Портфолио</a></li>
+          <li><a href="#about" class="nav__link">О нас</a></li>
+          <li><a href="#contact" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="tel:+79800123686" class="btn btn--sm btn--outline header__phone">+7 (980) 012-36-86</a>
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <div class="hero__content animate-up">
+        <span class="hero__badge">Студия 3D технологий</span>
+        <h1 class="hero__title">Воплощаем <span class="text-accent">идеи</span> в пластик</h1>
+        <p class="hero__subtitle">
+          3D печать на заказ, ремонт 3D принтеров и 3D моделирование в Туле, Москве и области.
+          Быстро, качественно, с гарантией.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--lg btn--primary">Заказать печать</a>
+          <a href="tel:+79800123686" class="btn btn--lg btn--outline">Позвонить</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn--lg btn--ghost">MAX</a>
+        </div>
+      </div>
+      <div class="hero__visual animate-up" style="animation-delay:0.15s">
+        <div class="hero__model">
+          <div class="hero__cube">
+            <div class="hero__cube-face hero__cube-face--front"></div>
+            <div class="hero__cube-face hero__cube-face--back"></div>
+            <div class="hero__cube-face hero__cube-face--right"></div>
+            <div class="hero__cube-face hero__cube-face--left"></div>
+            <div class="hero__cube-face hero__cube-face--top"></div>
+            <div class="hero__cube-face hero__cube-face--bottom"></div>
+            <div class="hero__cube-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Листайте вниз</span>
+      <div class="hero__scroll-mouse"></div>
+    </div>
+  </section>
+
+  <!-- PARTNERS / TRUST BAR -->
+  <section class="trust-bar">
+    <div class="container">
+      <p class="trust-bar__label">Работаем с материалами ведущих производителей</p>
+      <div class="trust-bar__logos">
+        <span>PLA</span><span>PETG</span><span>ABS</span><span>TPU</span>
+        <span>PA (нейлон)</span><span>PC</span><span>Carbon</span><span>ASA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header animate-up">
+        <span class="section__tag">Услуги</span>
+        <h2 class="section__title">Что мы предлагаем</h2>
+        <p class="section__desc">Решаем задачи любой сложности — от прототипа до серийной партии</p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card animate-up" style="animation-delay:0.05s">
+          <div class="service-card__icon">🖨️</div>
+          <h3 class="service-card__title">3D печать на заказ</h3>
+          <p class="service-card__desc">Изготовление деталей любой сложности по вашей модели. PLA, PETG, ABS, TPU, нейлон, PC, Carbon и другие материалы.</p>
+          <ul class="service-card__features">
+            <li>Точность до 0.05 мм</li>
+            <li>Размер до 300×300×400 мм</li>
+            <li>От 1 штуки до серии</li>
+          </ul>
+          <a href="#contact" class="service-card__cta">Узнать стоимость →</a>
+        </div>
+
+        <div class="service-card animate-up" style="animation-delay:0.1s">
+          <div class="service-card__icon">🔧</div>
+          <h3 class="service-card__title">Ремонт 3D принтеров</h3>
+          <p class="service-card__desc">Диагностика, ремонт и обслуживание FDM и SLA принтеров любых брендов. Выезжаем в Туле, Москве и ближайших городах.</p>
+          <ul class="service-card__features">
+            <li>Диагностика — бесплатно</li>
+            <li>Ремонт в день обращения</li>
+            <li>Гарантия на работу до 1 года</li>
+          </ul>
+          <a href="#contact" class="service-card__cta">Вызвать мастера →</a>
+        </div>
+
+        <div class="service-card animate-up" style="animation-delay:0.15s">
+          <div class="service-card__icon">💻</div>
+          <h3 class="service-card__title">3D моделирование</h3>
+          <p class="service-card__desc">Разработка 3D моделей по ТЗ, чертежам, эскизам или фотографиям. Подготовка моделей к печати, реверс-инжиниринг.</p>
+          <ul class="service-card__features">
+            <li>По вашим эскизам и фото</li>
+            <li>Адаптация под печать</li>
+            <li>Любые форматы (STL, STEP, OBJ)</li>
+          </ul>
+          <a href="#contact" class="service-card__cta">Заказать модель →</a>
+        </div>
+
+        <div class="service-card service-card--soon animate-up" style="animation-delay:0.2s">
+          <div class="service-card__icon">📡</div>
+          <h3 class="service-card__title">3D сканирование</h3>
+          <p class="service-card__desc">Скоро запускаем услугу 3D сканирования объектов. Оставьте заявку, чтобы получить доступ к услуге первой волны по спеццене.</p>
+          <span class="service-card__soon-badge">Скоро</span>
+          <a href="#contact" class="service-card__cta">В лист ожидания →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section why" id="about">
+    <div class="container">
+      <div class="section__header animate-up">
+        <span class="section__tag">Почему мы</span>
+        <h2 class="section__title">Нас выбирают</h2>
+      </div>
+      <div class="why__grid">
+        <div class="why-card animate-up">
+          <div class="why-card__num">01</div>
+          <h3 class="why-card__title">Опыт и экспертиза</h3>
+          <p class="why-card__desc">Более 5 лет работы с 3D технологиями. Знаем все тонкости печати и ремонта.</p>
+        </div>
+        <div class="why-card animate-up" style="animation-delay:0.05s">
+          <div class="why-card__num">02</div>
+          <h3 class="why-card__title">Скорость</h3>
+          <p class="why-card__desc">Срочная печать за 24 часа. Ремонт принтера в день обращения.</p>
+        </div>
+        <div class="why-card animate-up" style="animation-delay:0.1s">
+          <div class="why-card__num">03</div>
+          <h3 class="why-card__title">Качество</h3>
+          <p class="why-card__desc">Контроль на каждом этапе. Постобработка, шлифовка, покраска — сделаем деталь идеальной.</p>
+        </div>
+        <div class="why-card animate-up" style="animation-delay:0.15s">
+          <div class="why-card__num">04</div>
+          <h3 class="why-card__title">Любые объёмы</h3>
+          <p class="why-card__desc">От одного прототипа до мелкосерийного производства. Гибкие условия для бизнеса.</p>
+        </div>
+        <div class="why-card animate-up" style="animation-delay:0.2s">
+          <div class="why-card__num">05</div>
+          <h3 class="why-card__title">Гарантия</h3>
+          <p class="why-card__desc">Даём гарантию до 1 года на ремонт. Заменяем бракованные детали бесплатно.</p>
+        </div>
+        <div class="why-card animate-up" style="animation-delay:0.25s">
+          <div class="why-card__num">06</div>
+          <h3 class="why-card__title">Выезд и доставка</h3>
+          <p class="why-card__desc">Работаем в Туле, Москве и области. Доставим заказ или приедем на ремонт.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section__header animate-up">
+        <span class="section__tag">Портфолио</span>
+        <h2 class="section__title">Наши работы</h2>
+        <p class="section__desc">Примеры того, что мы печатаем и ремонтируем</p>
+      </div>
+      <div class="portfolio__grid">
+        <div class="portfolio__item animate-up"><div class="portfolio__placeholder"><span>📸</span><p>Ваша работа здесь</p></div></div>
+        <div class="portfolio__item animate-up" style="animation-delay:0.05s"><div class="portfolio__placeholder"><span>📸</span><p>Ваша работа здесь</p></div></div>
+        <div class="portfolio__item animate-up" style="animation-delay:0.1s"><div class="portfolio__placeholder"><span>📸</span><p>Ваша работа здесь</p></div></div>
+        <div class="portfolio__item animate-up" style="animation-delay:0.15s"><div class="portfolio__placeholder"><span>📸</span><p>Ваша работа здесь</p></div></div>
+        <div class="portfolio__item animate-up" style="animation-delay:0.2s"><div class="portfolio__placeholder"><span>📸</span><p>Ваша работа здесь</p></div></div>
+        <div class="portfolio__item animate-up" style="animation-delay:0.25s"><div class="portfolio__placeholder"><span>📸</span><p>Ваша работа здесь</p></div></div>
+      </div>
+      <div class="portfolio__cta animate-up">
+        <p>Хотите так же? Просто свяжитесь с нами</p>
+        <a href="#contact" class="btn btn--lg btn--primary">Обсудить проект</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner animate-up">
+        <h2 class="cta-banner__title">Нужна консультация?</h2>
+        <p class="cta-banner__desc">Позвоните или напишите — мы бесплатно проконсультируем по любому вопросу</p>
+        <div class="cta-banner__actions">
+          <a href="tel:+79800123686" class="btn btn--lg btn--white">+7 (980) 012-36-86</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn--lg btn--outline btn--white-outline">Написать в MAX</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header animate-up">
+        <span class="section__tag">Контакты</span>
+        <h2 class="section__title">Свяжитесь с нами</h2>
+        <p class="section__desc">Оставьте заявку или свяжитесь любым удобным способом</p>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info animate-up">
+          <div class="contact__item">
+            <span class="contact__icon">📞</span>
+            <div>
+              <strong>Телефон</strong>
+              <a href="tel:+79800123686">+7 (980) 012-36-86</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:ingenion71@yandex.com">ingenion71@yandex.com</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon">📍</span>
+            <div>
+              <strong>Регион</strong>
+              <span>Тула, Москва и ближайшие города</span>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon">💬</span>
+            <div>
+              <strong>Мессенджеры</strong>
+              <div class="contact__socials">
+                <a href="#" target="_blank" rel="noopener" class="contact__social-link">MAX</a>
+                <a href="https://t.me/ingenion71" target="_blank" rel="noopener" class="contact__social-link">Telegram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form animate-up" id="contactForm" style="animation-delay:0.1s">
+          <div class="form__group">
+            <input type="text" id="formName" class="form__input" placeholder="Ваше имя" required>
+          </div>
+          <div class="form__group">
+            <input type="tel" id="formPhone" class="form__input" placeholder="Ваш телефон" required>
+          </div>
+          <div class="form__group">
+            <select id="formService" class="form__input form__select">
+              <option value="">Выберите услугу</option>
+              <option value="3d-print">3D печать</option>
+              <option value="repair">Ремонт принтера</option>
+              <option value="modeling">3D моделирование</option>
+              <option value="scanning">3D сканирование</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <textarea id="formMessage" class="form__input form__textarea" placeholder="Опишите задачу" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--lg btn--primary form__submit">Отправить заявку</button>
+          <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__text">Ингенион <span class="logo__accent">Инжиниринг</span></span>
+        <p>3D печать, ремонт принтеров и 3D моделирование</p>
+      </div>
+      <div class="footer__links">
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#about">О нас</a>
+        <a href="#contact">Контакты</a>
+      </div>
+      <div class="footer__contacts">
+        <a href="tel:+79800123686">+7 (980) 012-36-86</a>
+        <a href="mailto:ingenion71@yandex.com">ingenion71@yandex.com</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2025 Ингенион Инжиниринг. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Наверх">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
