@@ -666,7 +666,7 @@ document.addEventListener('submit', function(e) {
   const ta = form.querySelector('textarea');
   if (ta) data.message = ta.value;
   if (data.name && data.phone) {
-    fetch('http://135.106.161.57:8000/api/leads', {
+    fetch('/proxy.php', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(data)
