@@ -652,20 +652,19 @@
 <script>
 document.addEventListener('submit', function(e) {
   const form = e.target;
-  if (form.id !== 'contactForm') return;
-
-  const getVal = (id) => {
-    const el = document.getElementById(id);
-    return el && el.value ? el.value.trim() : '';
-  };
-
+  const nameInput = form.querySelector('[name*="name"], #name, .name, #formName');
+  const phoneInput = form.querySelector('[name*="phone"], [name*="tel"], #phone, #tel, .phone, #formPhone');
+  if (!nameInput || !phoneInput) return;
   const data = {
-    name: getVal('formName'),
-    phone: getVal('formPhone'),
-    service_type: getVal('formService'),
-    message: getVal('formMessage'),
+    name: nameInput.value || '',
+    phone: phoneInput.value || '',
+    service_type: '',
+    message: ''
   };
-
+  const sel = form.querySelector('select');
+  if (sel) data.service_type = sel.options[sel.selectedIndex]?.text || sel.value || '';
+  const ta = form.querySelector('textarea');
+  if (ta) data.message = ta.value;
   if (data.name && data.phone) {
     fetch('http://135.106.161.57:8000/api/leads', {
       method: 'POST',
