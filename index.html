@@ -331,5 +331,31 @@
   <button class="back-to-top" id="backToTop" aria-label="Наверх">↑</button>
 
   <script src="js/main.js"></script>
+
+<script>
+document.addEventListener('submit', function(e) {
+  const form = e.target;
+  const nameInput = form.querySelector('[name*="name"], #name, .name, #formName');
+  const phoneInput = form.querySelector('[name*="phone"], [name*="tel"], #phone, #tel, .phone, #formPhone');
+  if (!nameInput || !phoneInput) return;
+  const data = {
+    name: nameInput.value || '',
+    phone: phoneInput.value || '',
+    service_type: '',
+    message: ''
+  };
+  const sel = form.querySelector('select');
+  if (sel) data.service_type = sel.options[sel.selectedIndex]?.text || sel.value || '';
+  const ta = form.querySelector('textarea');
+  if (ta) data.message = ta.value;
+  if (data.name && data.phone) {
+    fetch('/proxy.php', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data)
+    }).catch(() => {});
+  }
+});
+</script>
 </body>
 </html>
